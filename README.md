@@ -1,33 +1,49 @@
 # QA Minhas Finanças Tests
 
-## Objetivo
+## 📌 Objetivo
 
-Este repositório contém a solução de testes automatizados para o sistema Minhas Finanças, com foco nas regras de negócio descritas no desafio técnico.
+Este repositório contém a implementação da pirâmide de testes para o sistema **Minhas Finanças**, com foco nas regras de negócio descritas no desafio técnico.
 
-O repositório contém apenas os testes, sem o código-fonte da aplicação original.
+O repositório contém **apenas os testes**, conforme solicitado, sem o código-fonte da aplicação original.
 
-## Pirâmide de testes
+---
 
-A estratégia foi organizada em duas camadas principais:
+## 🧪 Estrutura da Pirâmide de Testes
 
-### Testes unitários
+A estratégia de testes foi organizada priorizando regras de negócio críticas:
 
-Implementados em .NET com xUnit, focando regras de domínio:
+### 🔹 Testes Unitários (xUnit / .NET)
 
-- cálculo de maioridade da pessoa;
-- validação da finalidade da categoria conforme o tipo da transação.
+Validação direta da lógica de domínio:
 
-### Testes end-to-end
+- Verificação de maioridade da pessoa;
+- Regras de finalidade da categoria em relação ao tipo de transação.
 
-Implementados com Playwright, validando fluxos reais da aplicação pela interface:
+Esses testes garantem consistência das regras sem dependência de interface ou infraestrutura.
 
-- abertura do sistema;
-- validação de cadastro de pessoa sem nome;
-- cadastro de pessoa com dados válidos.
+---
 
-## Como rodar os testes unitários
+### 🔹 Testes End-to-End (Playwright)
 
-Na raiz do repositório:
+Validação dos fluxos completos do sistema do ponto de vista do usuário:
+
+- Abertura da aplicação;
+- Navegação entre telas;
+- Cadastro de pessoa com dados válidos;
+- Validação de campos obrigatórios;
+- Validação de regras de negócio na interface.
+
+Os testes são executados em múltiplos browsers:
+
+- Chromium
+- Firefox
+- WebKit
+
+---
+
+## 🚀 Como executar os testes
+
+### 🔸 1. Testes Unitários (Backend)
 
 ```bash
 cd backend-tests/MinhasFinancas.Tests

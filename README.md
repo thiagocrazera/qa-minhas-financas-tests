@@ -107,3 +107,15 @@ npx playwright test
 ```bash
 npx playwright show-report
 ```
+
+## 🐞 Bugs Encontrados
+
+Durante a execução dos testes foram identificados problemas reais na aplicação.
+
+Os bugs identificados estão documentados na pasta:
+
+- `bugs/BUG-001.md`
+- `bugs/BUG-002.md`
+- `bugs/BUG-003.md`
+- `bugs/BUG-004.md`
+- `bugs/BUG-005.md`

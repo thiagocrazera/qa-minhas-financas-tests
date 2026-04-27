@@ -99,3 +99,4 @@ D:\Git\Minhas finanças teste\qa-minhas-financas-tests\backend-tests\MinhasFinan
 D:\Git\Minhas finanças teste\qa-minhas-financas-tests\backend-tests\MinhasFinancas.Tests\obj\Debug\net10.0\MinhasFinancas.Tests.pdb
 D:\Git\Minhas finanças teste\qa-minhas-financas-tests\backend-tests\MinhasFinancas.Tests\obj\Debug\net10.0\MinhasFinancas.Tests.genruntimeconfig.cache
 D:\Git\Minhas finanças teste\qa-minhas-financas-tests\backend-tests\MinhasFinancas.Tests\obj\Debug\net10.0\ref\MinhasFinancas.Tests.dll
+D:\Git\Minhas finanças teste\qa-minhas-financas-tests\backend-tests\MinhasFinancas.Tests\obj\Debug\net10.0\MinhasFinancas.Tests.sourcelink.json

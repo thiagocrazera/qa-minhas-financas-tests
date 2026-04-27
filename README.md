@@ -34,8 +34,8 @@ Os testes são executados nos seguintes navegadores:
 | Navegador  |
 |------------|
 | Chromium   |
-| Firefox    |
-| WebKit     |
+| Edge       |
+
 
 ---
 
@@ -108,6 +108,37 @@ npx playwright test
 npx playwright show-report
 ```
 
+---
+
+## 🧠 Estratégia e Justificativa
+
+A estratégia de testes foi definida com foco nas regras de negócio mais críticas do sistema, priorizando:
+
+- Restrições de idade para operações financeiras;
+- Consistência entre categoria e tipo de transação;
+- Validação de campos obrigatórios;
+- Fluxos principais do usuário (cadastro, visualização e exclusão).
+
+A abordagem adotada segue a pirâmide de testes:
+
+- Testes unitários para validação isolada da lógica de domínio;
+- Testes end-to-end para garantir o funcionamento completo do sistema do ponto de vista do usuário.
+
+Essa combinação permite maior confiabilidade da aplicação, cobrindo tanto regras internas quanto comportamento externo.
+
+---
+
+## 📁 Organização do Repositório
+
+O repositório está estruturado da seguinte forma:
+
+- `backend-tests/` → Testes unitários utilizando xUnit (.NET)
+- `tests/` → Testes end-to-end utilizando Playwright
+- `bugs/` → Documentação dos bugs encontrados
+- `README.md` → Documentação geral do projeto
+
+---
+
 ## 🐞 Bugs Encontrados
 
 Durante a execução dos testes foram identificados problemas reais na aplicação.
@@ -119,3 +150,11 @@ Os bugs identificados estão documentados na pasta:
 - `bugs/BUG-003.md`
 - `bugs/BUG-004.md`
 - `bugs/BUG-005.md`
+
+---
+
+## 🧪 Observação sobre testes de frontend
+
+O uso de Vitest seria adequado para testes unitários de componentes React.
+
+No entanto, como o desafio não permite alteração do código da aplicação, a validação foi realizada via testes end-to-end com Playwright.
